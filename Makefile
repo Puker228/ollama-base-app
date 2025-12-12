@@ -8,5 +8,5 @@ stop:
 	docker compose stop
 
 format:
-	ruff check --select I,F401 --fix
-	ruff format
+	uv run ruff check --select I,F401 --fix
+	uv run ruff format
